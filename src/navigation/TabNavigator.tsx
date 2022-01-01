@@ -2,7 +2,7 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { AlbumsNavigator } from "./AlbumsNavigator";
 import { NavigationContainer } from "@react-navigation/native";
 import { Favourites } from "../screens/Favourites";
-import { TabIcon } from "../components";
+import { Form, TabIcon } from "../components";
 
 const Tab = createBottomTabNavigator();
 
@@ -27,6 +27,14 @@ export const TabsNavigator = () => (
         options={{
           headerShown: false,
           tabBarIcon: (props) => <TabIcon {...props} name="albums" />,
+        }}
+      />
+      <Tab.Screen
+        name="Add album"
+        component={Form}
+        options={{
+          headerShown: false,
+          tabBarIcon: (props) => <TabIcon {...props} name="add-circle" />,
         }}
       />
       <Tab.Screen
