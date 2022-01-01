@@ -1,5 +1,5 @@
 import React, { FunctionComponent, useContext } from "react";
-import { Text } from "react-native";
+import { Text } from "../Text";
 import { AlbumsContext } from "../../context/albumsContext";
 import { useNavigationHook, useMedia } from "../../hooks";
 import { Controls } from "../Controls";

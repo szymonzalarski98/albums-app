@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
-import { ActivityIndicator, Text } from "react-native";
+import { ActivityIndicator } from "react-native";
+import { Text } from "../Text";
 import { getPhotos } from "../../api";
 import { AlbumsContext } from "../../context/albumsContext";
 import { useNavigationHook } from "../../hooks";
